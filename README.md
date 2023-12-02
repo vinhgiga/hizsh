@@ -1,14 +1,14 @@
 # Hizsh
 
-History/auto-complete menu, powerlevel10k prompt for zsh and pacman animation on Windows Terminal.
+History/auto-complete menu, powerlevel10k prompt for zsh and pacman animation on Windows Terminal (Click on the image below to watch a step-by-step tutorial video).
 
-![Introduction](/intro.png)
+[![Introduction](/intro.png)](https://youtu.be/4j8xEdOmgps)
 
 ## Installation
 
 ### Zsh installation
 
-1. Download and run [Msys2 installer](https://www.msys2.org/#installation). It’s as simple as Next and Finish.
+1. Download and run [Msys2 installer](https://www.msys2.org/#installation). It’s as simple as Next, Next, Next and Finish.
 2. A terminal for the UCRT64 environment will launch. To install Zsh, run the following commands:
 
    ```bash
@@ -55,10 +55,10 @@ C:/
 
 Configuration:
 
-1. Run the following commands to install zsh plugins:
+1. On UCRT64 terminal, run the following commands to install zsh plugins:
 
     ```bash
-    $ mkdir -p /c/giga/data/zsh-windows
+    $ mkdir -p /c/giga/data/zsh-windows /c/giga/data/assets
     $ cd /c/giga/data/zsh-windows
     $ echo 'export ZDOTDIR=/c/giga/data/zsh-windows' >> /etc/zsh/zshenv
     $ git clone https://github.com/marlonrichert/zsh-autocomplete
@@ -67,9 +67,7 @@ Configuration:
     $ git clone https://github.com/greymd/docker-zsh-completion
     ```
 
-2. Copy [.p10k.zsh](/.p10k.zsh), [.zshrc](/.zshrc) files from this repository to `C:\giga\data\zsh-windows` folder.
-3. Create a new `assets` folder in the `C:\giga\data\zsh-windows` folder
-4. Place [pacman.gif](/pacman.gif) to the `assets` folder.
+2. Copy the [.p10k.zsh](/.p10k.zsh), [.zshrc](/.zshrc) files from this repository to the `C:\giga\data\zsh-windows` folder.
 
 ### Windows Terminal and Visual Studio Code setup
 
@@ -101,6 +99,8 @@ Configuration:
         ]
     }
     ```
+
+3. Place the [pacman.gif](/pacman.gif) file to the `C:\giga\data\assets` folder.
 
 #### Visual Studio Code
 
